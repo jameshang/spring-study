@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-boot-study" options="-parameters" />
+      <module name="spring-boot-study" options="-endorseddirs $PROJECT_DIR$/spring-boot-study/target/endorsed -parameters" />
     </option>
   </component>
 </project>
