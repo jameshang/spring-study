@@ -4,9 +4,14 @@ import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -43,6 +48,23 @@ public class AppTest {
             log.info(sdf.format(date));
         } catch (Exception e) {
             log.error("testTimestamp failed!", e);
+        }
+    }
+
+    @Test
+    public void testJson(){
+        try {
+            Random r=new Random();
+            ObjectMapper mapper=new ObjectMapper();
+            Map<String, Object> map=new HashMap<>();
+            map.put("name", "tester");
+            map.put("date", new Date());
+            map.put("doubleValue", r.nextDouble());
+            map.put("longValue", r.nextLong());
+            String json=mapper.writeValueAsString(map);
+            log.info(json);
+        } catch (Exception e) {
+            log.error("testJson failed!", e);
         }
     }
 
