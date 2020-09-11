@@ -16,9 +16,13 @@ public class FooTest {
 
     @Test
     public void testFoo() throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = sdf.parse("2019-04-13 17:09:47");
-        log.info(date.getTime() + "");
+        int[] arr=new int[]{1,1,2,2,3,3,4,5,5};
+        int r=0;
+        for(int i:arr){
+            r^=i;
+        }
+        log.info("{}", 2^3);
+        log.info("{}", r);
     }
 
     @Test

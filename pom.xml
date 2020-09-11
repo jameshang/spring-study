@@ -12,40 +12,36 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- spring boot dependencies -->
-        <spring-boot-dependencies.version>2.0.3.RELEASE</spring-boot-dependencies.version>
-        <spring-framework.version>5.0.7.RELEASE</spring-framework.version>
-        <spring-security.version>5.0.6.RELEASE</spring-security.version>
+        <spring-boot-dependencies.version>2.3.3.RELEASE</spring-boot-dependencies.version>
+        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
+        <spring-security.version>5.4.0.RELEASE</spring-security.version>
 
         <!-- db dependencies -->
-        <mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
-        <druid.version>1.1.10</druid.version>
+        <mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
+        <druid.version>1.1.23</druid.version>
 
         <!-- java -->
-        <javaee-web-api.version>8.0</javaee-web-api.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
 
         <!-- tool dependencies -->
-        <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
-        <junit.version>4.12</junit.version>
-        <xstream.version>1.4.10</xstream.version>
+        <mybatis-generator-core.version>1.4.0</mybatis-generator-core.version>
+        <junit.version>4.13</junit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger-annotations.version>1.5.20</swagger-annotations.version>
-        <httpclient.version>4.5.6</httpclient.version>
-        <pagehelper.version>5.1.4</pagehelper.version>
-        <apache.poi.version>3.17</apache.poi.version>
-        <lombok.version>1.18.0</lombok.version>
-        <fastjson.version>1.2.41</fastjson.version>
-        <jedis.version>2.9.0</jedis.version>
-        <yasson.version>1.0.1</yasson.version>
-        <javax.json.version>1.1.2</javax.json.version>
+        <httpclient.version>4.5.12</httpclient.version>
+        <pagehelper.version>5.2.0</pagehelper.version>
+        <apache.poi.version>4.1.2</apache.poi.version>
+        <lombok.version>1.18.12</lombok.version>
+        <jedis.version>3.3.0</jedis.version>
 
         <!-- build -->
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <build.java-compiler>1.8</build.java-compiler>
-        <spring-boot-maven-plugin.version>2.0.3.RELEASE</spring-boot-maven-plugin.version>
+        <spring-boot-maven-plugin.version>2.3.3.RELEASE</spring-boot-maven-plugin.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-        <mybatis-generator-maven-plugin.version>1.3.7</mybatis-generator-maven-plugin.version>
-        <lombok-maven-plugin.version>1.18.0.0</lombok-maven-plugin.version>
+        <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
+        <lombok-maven-plugin.version>1.18.12.0</lombok-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -91,27 +87,9 @@
             </dependency>
 
             <dependency>
-                <groupId>org.eclipse</groupId>
-                <artifactId>yasson</artifactId>
-                <version>${yasson.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.glassfish</groupId>
-                <artifactId>javax.json</artifactId>
-                <version>${javax.json.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-web-api</artifactId>
-                <version>${javaee-web-api.version}</version>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
             </dependency>
 
             <dependency>
@@ -130,12 +108,6 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.thoughtworks.xstream</groupId>
-                <artifactId>xstream</artifactId>
-                <version>${xstream.version}</version>
             </dependency>
 
             <dependency>
