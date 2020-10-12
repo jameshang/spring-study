@@ -25,7 +25,7 @@
 
         <!-- tool dependencies -->
         <mybatis-generator-core.version>1.4.0</mybatis-generator-core.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger-annotations.version>1.5.20</swagger-annotations.version>
         <httpclient.version>4.5.12</httpclient.version>
