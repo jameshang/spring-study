@@ -13,7 +13,7 @@
 
         <!-- spring boot dependencies -->
         <spring-boot-dependencies.version>2.3.3.RELEASE</spring-boot-dependencies.version>
-        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
+        <spring-framework.version>5.2.9.RELEASE</spring-framework.version>
         <spring-security.version>5.4.0.RELEASE</spring-security.version>
 
         <!-- db dependencies -->
