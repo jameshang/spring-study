@@ -28,7 +28,7 @@
         <junit.version>4.13</junit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger-annotations.version>1.5.20</swagger-annotations.version>
-        <httpclient.version>4.5.12</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <pagehelper.version>5.2.0</pagehelper.version>
         <apache.poi.version>4.1.2</apache.poi.version>
         <lombok.version>1.18.12</lombok.version>
